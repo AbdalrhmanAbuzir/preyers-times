@@ -1,0 +1,146 @@
+:root{
+    --logoColor :#2d8eace8;
+    --backgroundColor:#f6f6f6;
+    --backgroundColor2:#ededed;
+    --paragraph:#f0f1d5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+/* start work in side body */
+
+.body{
+    width: 90%;
+    background-color: var(--backgroundColor);
+}
+.header{
+    width: 100%;
+    padding: 25px 30px 0;
+    /* margin-bottom: 10px; */
+    /* float: inline-start; */
+    overflow: hidden;
+}
+.header div{
+    color: var(--logoColor);
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo{
+    float: right;
+}
+.dd{
+    width: calc(50% + 17.5px);
+    float: left;
+}
+.day{
+    float: right;
+}
+.date{
+    float: left;
+    /* padding-top: 25px; */
+    /* padding-right: 30px; */
+    /* text-shadow: 1px 1px 1px rgb(#2d8eace8); */
+}
+.contant-container{
+    height: 890px;
+    padding: 30px;
+    /* width: 100%; */
+}
+.contant{
+    background-image: url("images/beautiful-islamic-mosque.jpg");
+    background-size:cover;
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: end;
+    position: relative;
+    /* height: 860px;
+    padding: 20px; */
+}
+.contant .p{
+    color: var(--paragraph);
+    /* position: absolute; */
+    /* top: calc(50% - 90px); */
+    /* left: calc(50% - 225px); */
+    padding-top: 50px;
+    font-size: 45px;
+    line-height: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+/* list of prayers times */
+.contant .prayers{
+    /* background-color: aqua; */
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* padding: 10px 0px; */
+    display: none;
+    justify-content: space-around;
+}
+.contant .prayers div{
+    background-color: var(--backgroundColor2);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    color: var(--logoColor);
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.contant .prayers div:hover{
+    border: 5px solid var(--logoColor);
+
+}
+/* end of the body */
+
+/* out side the body */
+
+/* start sidebar */
+.sidebar{
+    width: 10%;
+    background-color: #FFF;
+    height: 860px;
+    padding-top: 60px;
+}
+.sidebar div{
+    background-color: #fff;
+    width: 100px;
+    height: 75px;
+    margin-bottom: 50px;
+    margin-left:calc(50% - 50px);
+    /* margin-right: 25px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 5px #cccccccc;
+    cursor: pointer;
+}
+.sidebar div:hover{
+    /* border: 3px solid var(--logoColor); */
+    box-shadow: 0px 0px 7px 7px var(--backgroundColor2) ;
+    width: 130px;
+    height: 100px;
+    margin-left:calc(50% - 65px);
+    border: 1.5px solid #fff;
+
+}
+.sidebar div img{
+    border-radius: 10px;
+}
+
+/* .sidebar .qatar{
+    height: 75px;
+} */
+/* end of sidebar */
+
+
